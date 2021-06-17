@@ -381,9 +381,9 @@
           <b>void TowerofHanoi (int n, String from, String using, String to)</b> {</br>
           if(n>0)
           {</br>
-          Towerof Hanoi(n-1, from, to, using);</br>
-          System.out.println(“Move disk ”+n+” from ”+from+” to ”+to);</br>
-          Towerof Hanoi(n-1, using, from, to);</br>
+          &nbsp; &nbsp; Towerof Hanoi(n-1, from, to, using);</br>
+          &nbsp; &nbsp; System.out.println(“Move disk ”+n+” from ”+from+” to ”+to);</br>
+          &nbsp; &nbsp; Towerof Hanoi(n-1, using, from, to);</br>
           }
           } </br>
         </p>
@@ -400,7 +400,7 @@
           There are 2 recursive call for n-1 disks and one constant time operation to move a disk</br>
           Let it be k1.</br>
           Therefore,</br>
-          T(n) = 2 T(n-1) + k1</br>
+          T(n) = 2 T(n-1) + k1</br></br>
          
           <b>Time complexity</b> = O(2^n) or O(a^n) </br>
           where a is a constant greater than 1.</br>

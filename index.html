@@ -378,20 +378,14 @@
       <button type="button" class="collapsible">View Code</button>
       <div class="content">
         <p>
-          <b>void DFS(int v)
-            {</b><br>
-          <br>
-
-          visited[v] = true;<br>
-          cout<< v<< " " ;<br>
-
-            <br>
-            for (i = adj[v].begin(); i != adj[v].end(); ++i)<br>
-            <br>
-            if (!visited[*i])<br>
-            DFS(*i);<br>
-            <br>
-            <b>}</b>
+          <b>void TowerofHanoi (int n, String from, String using, String to)</b> {</br>
+          if(n>0)
+          {</br>
+          Towerof Hanoi(n-1, from, to, using);</br>
+          System.out.println(“Move disk ”+n+” from ”+from+” to ”+to);</br>
+          Towerof Hanoi(n-1, using, from, to);</br>
+          }
+          } </br>
         </p>
 
       </div>
@@ -402,12 +396,16 @@
           <b>Time Complexity</b>
         </div>
         <p>
-          <b>Adjacency list implementation:</b></br>
-          Time Complexity: O(v+e)</br></br>
-
-          <b>Adjacency matrix implementation: </b></br>
-          Time Complexity: O(v^2)</br></br>
-          where v stands for vertices and e stands for edges
+          Let the time required for n disks is T(n).</br>
+          There are 2 recursive call for n-1 disks and one constant time operation to move a disk</br>
+          Let it be k1.</br>
+          Therefore,</br>
+          T(n) = 2 T(n-1) + k1</br>
+         
+          <b>Time complexity</b> = O(2^n) or O(a^n) </br>
+          where a is a constant greater than 1.</br>
+          So it has exponential time complexity. 
+          
         </p>
       </div>
       <div class="card1"></div>

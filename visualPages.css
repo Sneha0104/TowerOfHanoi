@@ -61,6 +61,7 @@
   float: left;
   width: 25%;
   padding: 10px 10px;
+  padding-left: 20px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -171,4 +172,11 @@ code {
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+.imageBox{
+  background-color: lightgrey;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

@@ -106,15 +106,17 @@
 }
 
 /* Style the counter cards */
+/* view code card */
 .card {
   box-shadow: 0 4px 8px 1px black; /* this adds the "card" effect */
   padding-left: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 100px;
   padding-top: 0px;
   padding-right: 0px;
   text-align: left;
   background-color: lightgrey;
 }
+/* complexity */
 .card2{
   box-shadow: 0 4px 8px 1px black; /* this adds the "card" effect */
   padding-left: 10px;
@@ -124,11 +126,13 @@
   text-align: left;
   background-color: lightgrey;
 }
+/* space card */
 .card1 {
 	padding-left: 20px;
 	padding-top: 10px;
 	padding-right: 20px;
-	padding-bottom: 0px;	
+  padding-bottom: 0px;	
+
 	text-align: center;
   }
   
@@ -167,9 +171,9 @@
 }
 
 
-.active {
+/* .active {
   background-color: #242582;
-}
+} */
 code {
   font-family: Consolas,"courier new";
   color: black;
